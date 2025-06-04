@@ -127,7 +127,7 @@ try {
             if ($existingCluster) {
                 if ($existingCluster.state -eq "RUNNING" -or $existingCluster.state -eq "TERMINATED") {
 
-                    Write-Host "Cluster already exist. Updating cluster: $($incomingCluster.cluster_name)" -ForegroundColor Blue
+                    Write-Host "Cluster already exists. Updating cluster: $($incomingCluster.cluster_name)" -ForegroundColor Blue
                     $incomingCluster | Add-Member -NotePropertyName cluster_id -NotePropertyValue $existingCluster.cluster_id -Force
                     
                     # Azure Best Practice: Use temp files for JSON data with special characters
