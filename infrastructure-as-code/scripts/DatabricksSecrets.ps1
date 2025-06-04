@@ -16,7 +16,7 @@ if (-not $DatabricksToken) {
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "My DATABRICKS_TOKEN is: $env:DATABRICKS_TOKEN" -ForegroundColor Green
+Write-Host "DATABRICKS_TOKEN is set and ready to use." -ForegroundColor Green
 
 Write-Host "Getting variables from Library file..." -ForegroundColor Green
 
